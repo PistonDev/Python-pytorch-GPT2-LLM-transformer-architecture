@@ -205,3 +205,16 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ==============for LLM/ML specific================
+
+# datasets 
+data/
+
+# weights of gpt2 models
+gpt2/
+
+# torch model files
+*.pt
+*.pth
+*.ckpt
