@@ -13,6 +13,7 @@ The project focuses on understanding and implementing the **core architecture of
 ---
 
 ## Project Structure
+
 ├── main.py
 ├── gpt_download3.py
 ├── requirements.txt
@@ -49,6 +50,48 @@ If you change the dataset location:
 - Designed for **language modeling and text generation**
 - Supports training on custom text corpora
 
+Learning reference: Vizuara (YouTube) – clear explanations of Transformer architecture, self-attention, and computational complexity.
+
+---
+
+## Computational Notes & Performance Considerations
+
+This project includes detailed in-code comments describing:
+
+What each major function does
+
+How data flows through the Transformer architecture
+
+Why certain operations are computationally expensive
+
+the comments looks kind of messier tbh
+
+Special attention is given to:
+
+Self-attention complexity
+
+Matrix multiplications inside Transformer blocks
+
+Memory usage during training
+
+Hardware Considerations
+
+Training Transformer models is computationally heavy, especially as:
+
+Sequence length increases
+
+Model depth and embedding size grow
+
+For this reason:
+
+GPU acceleration is strongly recommended
+
+Virtual GPUs (such as cloud-based GPUs) can be used for training and experimentation
+
+CPU-only execution may be slow and is mainly suitable for testing or learning purposes
+
+> The code is written to prioritize clarity and architectural understanding over performance optimization.
+
 ---
 
 ## Installation
@@ -63,4 +106,5 @@ cd <repo-name>
   pip install -r requirements.txt
 
 ## Running the Model
-- run main.py
+```bash
+run main.py
