@@ -208,9 +208,6 @@ __marimo__/
 
 # ==============for LLM/ML specific================
 
-# datasets 
-data/
-
 # weights of gpt2 models
 gpt2/
 
