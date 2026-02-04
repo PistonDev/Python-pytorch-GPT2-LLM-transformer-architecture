@@ -394,7 +394,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 settings, params = download_and_load_gpt2(model_size = "124M", model_dir = "gpt2")
 
 # dummy dataset
-with open("data/books_large_p1.txt", 'r', encoding = "utf-8")as f:
+with open("the-verdict.txt", 'r', encoding = "utf-8")as f:
     story_book = f.read()
 
 # bpe tokenizer
@@ -480,5 +480,6 @@ if __name__ == '__main__':
         top_k=40,
         temperature=0.8
     )
+
 
     print("Output text:\n", token_ids_to_text(token_ids, tokenizer))
